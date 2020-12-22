@@ -45,10 +45,13 @@ while true do
         write << ["#{text_data}"]
       end
     
-    else
+    elsif choose == 2
       CSV.open("#{title}.csv", "a") do |write|
         write << ["#{text_data}"]
       end
+    
+    else
+      puts "選択できない項目です。"
     end
     
   # ループ終了
